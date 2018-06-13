@@ -1,21 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="">
-    <title>Deep into the Darkness</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <title>Deep into the Darkness</title>
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+  <link href="http://weloveiconfonts.com/api/?family=zocial" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <!-- TIMER-->
-    <section>
-    <span class="timer">00:00</span>
-    <p class="life_title">Lifes: </p>
-    <span class="life"></span>
-  </section>
-
-    <script src="js/resources.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/engine.js"></script>
-</body>
+  <body>
+    <div class = "main">
+      <div class="overlay" id="overlay">
+        <div class="selection">Select your type of game</div>
+        <div class="firstGame" onclick="first()"  id="first" >Everybody's a star</div>
+        <p class="rules">Try to collect the 10 missing stars while avoiding the bad guys</p>
+        <div class="secondGame" onclick="second()"  id="second" >Resist, prove that you exist</div>
+        <p class="rules">Try to resist as long as you can from the bad-bad guys</p>
+        <div class="thirdGame" onclick="third()"  id="third" >Heal the world</div>
+        <p class="rules">Try to stop the bad-bad-bad guys from escaping their world to enter our</p>
+      </div>
+      <div id="results" class="hide">
+        <p id="message_resu"></p>
+        <p id="message_time"></p>
+        <p id="message_move"></p>
+        <p id="message_star"></p>
+      </div>
+      <section>
+        <span class="timer">00:00</span>
+        <p class="life_title">Lifes: </p>
+        <span class="life"></span>
+        <p class="star_title">Stars: </p>
+        <span class="star"></span>
+        <p class="enemy_title">Bad guys released: </p>
+        <span class="enemy"></span>
+        <div id="song"></div>
+      </section>
+      <script src="js/resources.js"></script>
+      <script src="js/app.js"></script>
+      <script src="js/engine.js"></script>
+    </div>
+      <footer>
+  		<a class="zocial-gmail" href="mailto:martin.dessart@2017.icam.fr">email me</a>
+  		<a class="zocial-github" href="http://github.com/momomartin">momomartin</a>
+  		<a class="zocial-linkedin" href="http://www.linkedin.com/in/martin-dessart/ ">LinkedIn</a>
+  	</footer>
+  </body>
 </html>
