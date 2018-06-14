@@ -317,6 +317,7 @@ function first() {
   sound.controls = "controls";
   sound.src = "Star.mp3";
   sound.type = "audio/mpeg";
+  sound.autoplay = true;
   document.getElementById('song').appendChild(sound);
   // hide the overlay
   document.getElementById("overlay").style.display = "none";
@@ -338,6 +339,7 @@ function second() {
   sound.controls = "controls";
   sound.src = "Resist.mp3";
   sound.type = "audio/mpeg";
+  sound.autoplay = true;
   document.getElementById('song').appendChild(sound);
   // hide the overlay
   document.getElementById("overlay").style.display = "none";
