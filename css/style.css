@@ -4,6 +4,8 @@
  *
  */
 
+@import url(http://weloveiconfonts.com/api/?family=brandico|zocial);
+
 body {
   text-align: center;
 }
@@ -150,17 +152,23 @@ margin: 3.5em 0 0 0;
  *
  */
 
+
 a {
-	color: #3399cc;
+	color: #3478e5;
 	text-decoration: none;
+  margin: 0.5em;
 }
 
-.zocial-github:before,
-.zocial-gmail:before,
-.zocial-linkedin:before {
-	font-family: 'zocial', sans-serif;
-	margin: 5px 10px 5px 25px;
+[class*="brandico-"]:before {
+  font-family: 'brandico', sans-serif;
+  margin: 0.3em;
 }
+
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+  margin: 0.3em;
+}
+
 
 /*
  *
