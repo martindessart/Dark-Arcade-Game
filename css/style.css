@@ -4,7 +4,6 @@
  *
  */
 
-@import url(http://weloveiconfonts.com/api/?family=brandico|zocial);
 
 body {
   text-align: center;
@@ -158,17 +157,6 @@ a {
 	text-decoration: none;
   margin: 0.5em;
 }
-
-[class*="brandico-"]:before {
-  font-family: 'brandico', sans-serif;
-  margin: 0.3em;
-}
-
-[class*="zocial-"]:before {
-  font-family: 'zocial', sans-serif;
-  margin: 0.3em;
-}
-
 
 /*
  *
