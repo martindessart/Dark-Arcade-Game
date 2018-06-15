@@ -1,6 +1,42 @@
-frontend-nanodegree-arcade-game
-===============================
+#frontend-nanodegree-arcade-game
+The goal of this Udacity project is to build an arcade game following this [rubric](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true)
 
-Students should use this [rubric](https://review.udacity.com/#!/projects/2696458597/rubric) for self-checking their submission. Make sure the functions you write are **object-oriented** - either class functions (like Player and Enemy) or class prototype functions such as Enemy.prototype.checkCollisions, and that the keyword 'this' is used appropriately within your class and class prototype functions to refer to the object the function is called upon. Also be sure that the **readme.md** file is updated with your instructions on both how to 1. Run and 2. Play your arcade game.
+# Documentation
+[Udacity Style Guide](http://udacity.github.io/frontend-nanodegree-styleguide/)
 
-For detailed instructions on how to get started, check out this [guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
+[Review](https://review.udacity.com/#!/rubrics/15/view)
+
+# Install
+
+Download this GitHub project
+
+Open the HTML file
+
+Well Done
+
+# Technologies used
+
+* JavaScript
+* Grunt
+* CSS3
+* HTML5
+
+# Contributing
+
+Any improvements are very welcome as I'm only a devoted follower trying to get into this hard (but soft) world.
+
+#LICENSE
+
+DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+               Version 2, December 2004
+
+Copyright (C) 2004 Sam Hocevar <sam@hocevar.net>
+
+Everyone is permitted to copy and distribute verbatim or modified
+copies of this license document, and changing it is allowed as long
+as the name is changed.
+
+       DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+
+0. You just DO WHAT THE FUCK YOU WANT TO.
