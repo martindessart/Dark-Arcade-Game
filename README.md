@@ -1,4 +1,4 @@
-#frontend-nanodegree-arcade-game
+# frontend-nanodegree-arcade-game
 The goal of this Udacity project is to build an arcade game following this [rubric](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true)
 
 # Documentation
@@ -25,7 +25,7 @@ Well Done
 
 Any improvements are very welcome as I'm only a devoted follower trying to get into this hard (but soft) world.
 
-#LICENSE
+# LICENSE
 
 DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
                Version 2, December 2004
