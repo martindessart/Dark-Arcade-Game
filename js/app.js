@@ -69,12 +69,12 @@ let minutes=0;
 // enemies class
 const Enemy = function(x,y) {
   // load img
-    this.sprite = 'images/enemy-bug.png';
-    // Set the enemy position
-    this.x = x;
-    this.y = y;
-    // Set a random position
-    this.multiplier=Math.floor((Math.random()*10)+1);
+  this.sprite = 'images/enemy-bug.png';
+  // Set the enemy position
+  this.x = x;
+  this.y = y;
+  // Set a random position
+  this.multiplier=Math.floor((Math.random()*10)+1);
 }
 
 // update function: reset enemy position
@@ -84,12 +84,12 @@ Enemy.prototype.update = function(dt) {
   if (this.x>450){
     // if game 3, count number of enemies
     if (typeGame == 3) {
-    enemyNum ++;
-    enemy.innerHTML = enemyNum;
-    // if 10 enemies cross, player lose
-    if (enemyNum == 10) {
+      enemyNum ++;
+      enemy.innerHTML = enemyNum;
+      // if 10 enemies cross, player lose
+      if (enemyNum == 10) {
         setTimeout(function(){
-        lose();
+          lose();
         }, 500);
       }
     }
@@ -101,9 +101,9 @@ Enemy.prototype.update = function(dt) {
       this.reset();
     }
     else {
-    lifeNum --;
-    life.innerHTML = lifeNum;
-    player.reset();
+      lifeNum --;
+      life.innerHTML = lifeNum;
+      player.reset();
     }
   }
 }
@@ -121,7 +121,7 @@ Enemy.prototype.reset=function(){
 
 // draw the enemy on the screen
 Enemy.prototype.render = function() {
-    ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
+  ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
 }
 
 // nothing to control here
@@ -146,20 +146,20 @@ const Player = function(x,y){
 
 // draw the player on the screen
 Player.prototype.render = function() {
-	ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
+  ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
 }
 
 // update function: set new positions
 Player.prototype.update = function() {
-this.x=this.x;
-this.y=this.y;
+  this.x=this.x;
+  this.y=this.y;
 }
 
 // control movements of the player
 Player.prototype.handleInput = function(move) {
   if (move ==='up') {
-		this.y = this.y - 80;
-}
+    this.y = this.y - 80;
+  }
   if (move ==='down') {
     this.y = this.y + 80;
   }
@@ -195,13 +195,13 @@ Player.prototype.reset = function(){
   }
   else {
     // else, put the player on the initial position
-  this.y = this.rest;
-}
-    if (lifeNum===0){
-      setTimeout(function(){
+    this.y = this.rest;
+  }
+  if (lifeNum===0){
+    setTimeout(function(){
       lose();
-      }, 500);
-    }
+    }, 500);
+  }
 }
 
 
@@ -222,15 +222,15 @@ Star.prototype.update = function() {
   // only if playing game 1
   if (typeGame == 1) {
     //if there is a collision, reset player and star
-  if (this.y == ((player.y)-40) && this.x == ((player.x)-10)){
-    player.reset();
-    star.reset();
-    //define random location for the star
-    let starAlea=[0, 101, 202, 303, 404];
-    let starPos=starAlea[Math.floor(Math.random()*5)];
-    // increment star number
-    starNum ++;
-    stars.innerHTML = starNum;
+    if (this.y == ((player.y)-40) && this.x == ((player.x)-10)){
+      player.reset();
+      star.reset();
+      //define random location for the star
+      let starAlea=[0, 101, 202, 303, 404];
+      let starPos=starAlea[Math.floor(Math.random()*5)];
+      // increment star number
+      starNum ++;
+      stars.innerHTML = starNum;
     }
   }
 }
@@ -238,22 +238,22 @@ Star.prototype.update = function() {
 // draw the star on the screen
 Star.prototype.render = function() {
   if (typeGame == 1) {
-  ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
+    ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
   }
 }
 
 // reset function: put the star on the initial location
 Star.prototype.reset = function(){
-    // only if it's game 1
-    if (typeGame == 1) {
+  // only if it's game 1
+  if (typeGame == 1) {
     // define random location
     starAlea=[0, 101, 202, 303, 404];
     this.x=starAlea[Math.floor(Math.random()*5)];
     //if star is number 10, you win
     if (starNum===9){
       setTimeout(function(){
-      win();
-    }, 500);
+        win();
+      }, 500);
     }
   }
 }
@@ -273,16 +273,16 @@ function lose(){
   //display some sad messages ! :(
   message_resu.textContent="You lose!";
   message_time.textContent="You lose "+minutes+" minutes and "+seconds+" seconds of your life, congratulations!";
-    if (starNum==0){
-      message_star.textContent="But no worries, you can still play again !";
-    }
-    else {
+  if (starNum==0){
+    message_star.textContent="But no worries, you can still play again !";
+  }
+  else {
     message_star.textContent="And finally, you only won "+starNum+" beautiful stars!";
-    }
-    counter.classList.remove("show");
-    life.classList.remove("show");
-    stars.classList.remove("show");
-    enemy.classList.remove("show");
+  }
+  counter.classList.remove("show");
+  life.classList.remove("show");
+  stars.classList.remove("show");
+  enemy.classList.remove("show");
 }
 
 //win function
@@ -294,19 +294,19 @@ function win(){
   // stop time
   clearInterval(time);
   //display some good messages ! :)
-    message_resu.textContent="You won!";
-    message_time.textContent="You lose "+minutes+" minutes and "+seconds+" seconds of your life, congratulations!";
-    message_move.textContent="You also kept "+lifeNum+" life(s) that you could use against the bad guys.";
-    if (starNum==0){
-      message_star.textContent="Now try to play another game!";
-    }
-    else {
+  message_resu.textContent="You won!";
+  message_time.textContent="You lose "+minutes+" minutes and "+seconds+" seconds of your life, congratulations!";
+  message_move.textContent="You also kept "+lifeNum+" life(s) that you could use against the bad guys.";
+  if (starNum==0){
+    message_star.textContent="Now try to play another game!";
+  }
+  else {
     message_star.textContent="And finally, you also won "+starNum+" beautiful stars!";
-    }
-    counter.classList.remove("show");
-    life.classList.remove("show");
-    stars.classList.remove("show");
-    enemy.classList.remove("show");
+  }
+  counter.classList.remove("show");
+  life.classList.remove("show");
+  stars.classList.remove("show");
+  enemy.classList.remove("show");
 }
 
 // function for the first game
@@ -380,14 +380,14 @@ function third() {
 // This listens for key presses and sends the keys to your
 // Player.handleInput() method. You don't need to modify this.
 document.addEventListener('keyup', function(e) {
-    var allowedKeys = {
-        37: 'left',
-        38: 'up',
-        39: 'right',
-        40: 'down'
-    };
+  var allowedKeys = {
+    37: 'left',
+    38: 'up',
+    39: 'right',
+    40: 'down'
+  };
 
-    player.handleInput(allowedKeys[e.keyCode]);
+  player.handleInput(allowedKeys[e.keyCode]);
 });
 
 //Set the time
