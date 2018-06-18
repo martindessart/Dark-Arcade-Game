@@ -1,5 +1,5 @@
 /////////////// SET VARIABLES ///////////////////////
-
+"use strict";
 
 // select time
 const counter = document.querySelector(".timer");
@@ -41,7 +41,7 @@ const message_star = document.querySelector("#message_star");
 const message_resu = document.querySelector("#message_resu");
 
 //Set type of game
-typeGame = 0;
+let typeGame = 0;
 
 //Set life
 let lifeNum = 10;
@@ -96,7 +96,7 @@ Enemy.prototype.update = function(dt) {
     this.reset();
   }
   // if there is collision, reset player or enemy depending on the game
-  if (this.y == player.y && this.x>(player.x-40) && this.x<(player.x+40)){
+  if (this.y == player.y && this.x>(player.x-60) && this.x<(player.x+40)){
     if (typeGame == 3) {
       this.reset();
     }
