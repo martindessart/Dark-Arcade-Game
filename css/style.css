@@ -7,6 +7,7 @@
 
 body {
   text-align: center;
+  overflow:hidden;
 }
 
 .main {
@@ -79,10 +80,7 @@ body {
   padding: 0.1em;
   margin: auto;
   border-radius: 10px;
-  position: absolute;
   text-align:center;
-  top: 2px;
-  left: 100px;
   display: none;
 }
 
@@ -90,40 +88,10 @@ body {
   font-family: 'Coda', cursive;
   display: none;
   font-size: 1em;
-  position: absolute;
   padding: 0.1em;
   margin: 0.2em;
 }
 
-.life {
-  left: 260px;
-  top: -2px;
-}
-
-.life_title {
-  left: 200px;
-  top: -2px;
-}
-
-.star {
-  left: 260px;
-  top: 22px;
-}
-
-.star_title {
-  left: 200px;
-  top: 22px;
-}
-
-.enemy {
-  left: 360px;
-  top: 22px;
-}
-
-.enemy_title {
-  left: 200px;
-  top: 22px;
-}
 
 #results {
   background: #ffffff url("../images/dark.png");
@@ -141,8 +109,8 @@ body {
   font-family: 'Indie Flower', cursive;
 }
 
-#audio{
-margin: 3.5em 0 0 0;
+#song, #audio{
+display:inline-block;
 }
 
 /*
@@ -170,5 +138,5 @@ a {
 }
 
 .show {
-  display:block;
+  display: inline-block;
 }
