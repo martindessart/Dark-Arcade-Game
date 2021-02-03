@@ -14,6 +14,10 @@ Open the HTML file
 
 Well Done
 
+or another more complex option click here (https://momomartin.github.io/Dark-Arcade-Game/)
+
+You're a hero
+
 # Technologies used
 
 * JavaScript
